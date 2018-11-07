@@ -40,7 +40,7 @@ LINEへの投稿が不要であればMessagin APIの契約やそれに付随する設定は不要です。
 - LINE Messaging APIのDeveloper Trial(無償)を契約してボットアカウントを作る
 - デプロイ時に表示されたAPI GatewayのURLを、Messaging APIのコールバックに登録する
 - ボットアカウントとLINEで友達になり、適当なグループを作成してそこに招待する
-- AWSのコンソールから、Lambda関数「babyconter-hello-dev」のCloudWatch Logsを見るとグループ招待のイベントログが出てるはずなので「groupId」の部分を取得してconfig.iniに記載する
+- AWSのコンソールから、Lambda関数「babycounter-hello-dev」のCloudWatch Logsを見るとグループ招待のイベントログが出てるはずなので「groupId」の部分を取得してconfig.iniに記載する
 - googleのcredentialを取得する
   - https://console.developers.google.com/project にアクセス
   - [プロジェクト作成] にてプロジェクトを作成
@@ -60,7 +60,7 @@ LINEへの投稿が不要であればMessagin APIの契約やそれに付随する設定は不要です。
   %sls deploy
   ```
 - ボタンをひもづける
-  - AWSのコンソールないしはCLIで、作成されたLambda関数「babyconter-sendmsg-dev」にボタンをひもづける
+  - AWSのコンソールないしはCLIで、作成されたLambda関数「babycounter-sendmsg-dev」にボタンをひもづける
 
 
  
