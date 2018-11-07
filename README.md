@@ -12,8 +12,8 @@ AWSのアカウントの作り方などの詳細は適宜調べてください
 
 - python2.7をインストールする
 - AWSのアカウントを作り、aws cliが動くようにする
-- この辺(https://aws.amazon.com/jp/iot-1-click/devices/)を見てデバイスを入手する
-  - 個人的には接続が簡単で電池も変えられるSORACOM LTE-M Button powered by AWS(https://pages.soracom.jp/LP_SORACOM-LTE-M-Button.html)がお勧めです。
+- [この辺](https://aws.amazon.com/jp/iot-1-click/devices/)を見てデバイスを入手する
+  - 個人的には接続が簡単で電池も変えられる[SORACOM LTE-M Button powered by AWS](https://pages.soracom.jp/LP_SORACOM-LTE-M-Button.html)がお勧めです。
 - git cloneする
 - serverless frameworkをインストールする
   ```bash
