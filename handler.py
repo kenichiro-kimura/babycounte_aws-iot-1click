@@ -60,8 +60,6 @@ def sendmsg(event, context):
         eventtext = u"ミルク"
         cgfile = inifile.get('s3','longcg');
 
-    print s3url+cgfile
-    
     flex = BubbleContainer(
         hero=ImageComponent(
             size='full',
