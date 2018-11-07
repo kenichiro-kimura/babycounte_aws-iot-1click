@@ -32,7 +32,7 @@ LINEへの投稿が不要であればMessagin APIの契約やそれに付随する設定は不要です。
   ```bash
   %pip install -r requirements.txt -t ./
   ```
-- クリック()  
+- クリックしたときにLINEに送られるCGを3種類準備し、どこかhttpsでアクセスできるところに置き、URLとファイル名をconfig.iniに記載する
 - 取りあえずデプロイする
   ```bash
   %sls deploy
