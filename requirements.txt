@@ -1,2 +1,5 @@
 line-bot-sdk
 ConfigParser
+gspread
+oauth2client
+pytz
