@@ -1,0 +1,37 @@
+service: tenkun
+provider:
+  name: aws
+  runtime: python2.7
+  vpc:
+    securityGroupIds:
+      - sg-59f4073e
+    subnetIds:
+      - subnet-3551ee43
+      - subnet-3645fa40
+    vpcIds:
+      - vpc-43ca3427
+
+  stage: dev
+  region: ap-northeast-1
+
+iamRoleStatements:
+  - Effect: "Allow"
+    Action:
+      - "ec2:CreateNetworkInterface"
+      - "ec2:DescribeNetworkInterfaces"
+      - "ec2:DeleteNetworkInterface"
+    Resource:
+      "*"
+functions:
+  sendmsg:
+    handler: handler.sendmsg
+    
+  hello:
+    handler: handler.hello
+    events:
+     - http:
+          path: tenkun
+          method: get
+     - http:
+          path: tenkun
+          method: post
