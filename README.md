@@ -26,7 +26,7 @@ LINEへの投稿が不要であればMessagin APIの契約やそれに付随する設定は不要です。
 - このプロジェクトをgit cloneする
 - serverless frameworkをインストールする
   ```bash
-  %pip install serverless
+  %npm install -g serverless
   ```
 - 必要なライブラリを入れる
   ```bash
